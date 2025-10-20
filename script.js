@@ -14,6 +14,23 @@ for ( var i =0; i<emojis.length; i++){
                     ('boxMatch')
                     document.querySelectorAll('.boxOpen')[1].classList.add
                     ('box.Match')
+
+                    document.querySelectorAll('.boxOpen')[1].classList.remove
+                    ('box.Open')
+
+                    document.querySelectorAll('.boxOpen')[0].classList.remove
+                    ('box.Open')
+
+                    if(document.querySelectorAll('.boxMatch').length == emojis.length) {
+                        alert('win')
+                    }
+                } else {
+
+                    document.querySelectorAll('.boxOpen')[1].classList.remove
+                    ('box.Open')
+
+                    document.querySelectorAll('.boxOpen')[0].classList.remove
+                    ('box.Open')
                 }
             }
         },500)
