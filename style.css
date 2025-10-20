@@ -48,11 +48,42 @@ h2 {
 }
 
 .game {
-    width: 440px;
-    height: 440px;
+    width: 430px;
+    height: 430px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     transform-style: preserve-3d;
-    perspective: 400px;
+    perspective: 500px;
+}
+
+.item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: white;
+    transform: rotatY(0deg);
+    transition: 0.25s;
+}
+
+.item:after {
+    transform: rotateY(0deg);
+}
+
+.item:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: lightblue;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen:after {
+    transform: rotateY(180deg);
 }
