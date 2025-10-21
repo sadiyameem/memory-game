@@ -12,12 +12,12 @@ var secondCard = null;
 for (var i = 0; i < shuf_emojis.length; i++) {
     var box = document.createElement('div');
     box.className = 'item';
-    box.innerHTML = shuf_emojis[i];
+    box.innerHTML = "<span>" + shuf_emojis[i] + "</span>";
 
     // click cards
     box.onclick = function() {
         // Don't allow clicking the same card twice
-        if (this === fristCard || this.classList.contains('boxMatch')) return;
+        if (this === firstCard || this.classList.contains('boxMatch')) return;
 
         this.classList.add('boxOpen');
 
@@ -34,9 +34,8 @@ for (var i = 0; i < shuf_emojis.length; i++) {
 
             // remove after a short time
             setTimeout(function() {
-                firstCard.classList.remove('boxOpen');
-                secondCard.classList.remove('boxOpen');
-                firstcard = null;
+                
+                firstCard = null;
                 secondCard = null;
 
                 // check for win

@@ -1,25 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: arial;
+    box-sizing: border-baox;
+    font-family: Arial;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: green;
+    background-color: green;
+    height: 100vh;
 }
 
 .container {
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    background: blue;
+    background-color: blue;
     padding: 40px 60px;
 }
 
@@ -33,18 +32,17 @@ h2 {
 .reset {
     padding: 15px 20px;
     color: pink;
-    background: white;
+    background-color: white;
     border: none;
     font-size: 1.5em;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: 600;
+    font-size: bold;
 }
 
 .reset:focus {
     color: white;
-    background: pink;
+    background-color: pink;
 }
 
 .game {
@@ -53,37 +51,37 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
 }
 
 .item {
-    position: relative;
     width: 100px;
     height: 100px;
+    position: relative;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    background: white;
-    transform: rotateY(0deg);
-    transition: 0.25s;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: reserve-3d;
 }
 
-.item:after {
-    transform: rotateY(0deg);
+.item span {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
 
-.item:after {
+.item::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background: lightblue;
-    transition: 0.25s;
-    transform: rotateY(0deg);
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
     backface-visibility: hidden;
 }
 
-.boxOpen:after, .boxMatch:after {
+.boxOpen, .boxMatch {
     transform: rotateY(180deg);
 }
