@@ -1,3 +1,14 @@
+// timer logic
+var time = 0;
+var timerElement = document.getElementById("timer");
+
+
+// start timer
+var timer = setInterval(function() {
+    time++;
+    timerElement.textContent = "Time: " + time + "s";
+}, 1000);
+
 // emoji pairs
 var emojis = ["🐶","🐶","🐱","🐱","🐵","🐵","🦆","🦆","🐢","🐢","🐬","🐬","🦭","🦭","🦕","🦕"];
 
@@ -45,7 +56,8 @@ for (var i = 0; i < shuf_emojis.length; i++) {
 
                 // check for win
                 if (document.querySelectorAll('.boxMatch').length === emojis.length) {
-                    alert('You win!');
+                    clearInterval(timer);
+                    alert('You win! Time: ' + time + ' seconds');
                 }
             }, 700);
         }
