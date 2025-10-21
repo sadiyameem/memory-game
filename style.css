@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-baox;
+    box-sizing: border-box;
     font-family: Arial;
 }
 
@@ -37,7 +37,7 @@ h2 {
     font-size: 1.5em;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .reset:focus {
@@ -64,7 +64,7 @@ h2 {
     font-size: 3em;
     cursor: pointer;
     transition: transform 0.5s;
-    transform-style: reserve-3d;
+    transform-style: preserve-3d;
 }
 
 .item span {

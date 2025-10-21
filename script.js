@@ -34,7 +34,12 @@ for (var i = 0; i < shuf_emojis.length; i++) {
 
             // remove after a short time
             setTimeout(function() {
-                
+                if (!firstCard.classList.contains('boxMatch')) {
+                    firstCard.classList.remove('boxOpen');
+                }
+                if (!secondCard.classList.contains('boxMatch')) {
+                    secondCard.classList.remove('boxOpen');
+                }
                 firstCard = null;
                 secondCard = null;
 
@@ -42,7 +47,7 @@ for (var i = 0; i < shuf_emojis.length; i++) {
                 if (document.querySelectorAll('.boxMatch').length === emojis.length) {
                     alert('You win!');
                 }
-            }, 500);
+            }, 700);
         }
     }
 
