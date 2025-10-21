@@ -24,3 +24,5 @@ I learned how to use different types of css from the ones I typically use.
 https://emojicopy.com/ --> This is where I got the emojis from
 
 Created by Sadiya
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
