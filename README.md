@@ -11,6 +11,7 @@ The game ends when all pairs are matched.
 - Shuffled cards every time the game resets
 - Reset button to start a new game.
 - Alerts the player when all matches are found (You win).
+- Timer that counts how long it took you to play the game
 
 # Motivation
 I built this because I always wanted to make this type of game but never had the chance until now.
