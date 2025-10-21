@@ -1,4 +1,4 @@
-# memory-game
+# Memory-Game
 
 # Description
 This is a simple Memory Game using HTML, CSS and JavaScript.
