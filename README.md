@@ -16,7 +16,10 @@ The game ends when all pairs are matched.
 I built this because I always wanted to make this type of game but never had the chance until now.
 
 # Challenges/Learned
-A challenge was to make the cards flip over.
-I learned how to use different types of css form the ones I did before.
+A challenge was to make the cards flip over and making it functional overall.
+I learned how to use different types of css from the ones I typically use.
+
+# Link
+https://emojicopy.com/ --> This is where I got the emojis from
 
 Created by Sadiya
